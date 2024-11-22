@@ -8,7 +8,7 @@ using FFXIVClientStructs.FFXIV.Client.UI.Agent;
 using FFXIVClientStructs.FFXIV.Component.GUI;
 using ImGuiNET;
 using Lumina.Excel;
-using Lumina.Excel.GeneratedSheets;
+using Lumina.Excel.Sheets;
 using MiniMappingway.Model;
 using MiniMappingway.Service;
 using MiniMappingway.Utility;
@@ -169,7 +169,7 @@ namespace MiniMappingway.Manager
             {
                 var map = _maps.GetRow(GetMapId());
 
-                if (map == null) { return; }
+                
 
                 if (map.SizeFactor != 0)
                 {
